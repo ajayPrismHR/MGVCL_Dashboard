@@ -73,14 +73,14 @@
                 </div>
                 <!--Left Panel Menu Items-->
                 <ul class="sidebar-nav">
-                    <li class="sidebar-header">
+                    @*<li class="sidebar-header">
                         Main
-                    </li>
+                    </li>*@
                     @{
                         int i = 1;
                     }
 
-                    @if (@Session["ModelMenu"] != null)
+                    @*@if (@Session["ModelMenu"] != null)
                     {
                         foreach (var menu in (IEnumerable<ComplaintTracker.Models.ModelMenu>)Session["ModelMenu"])
                         {
@@ -135,7 +135,7 @@
                     else
                     {
                         Response.Redirect("~/Login/AccountLogin");
-                    }
+                    }*@
 
                     @*<li class="sidebar-item active">
                             <a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link">

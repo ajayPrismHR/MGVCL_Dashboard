@@ -48,7 +48,7 @@ namespace ComplaintTracker.Controllers
         {
            
             ModelDashboard modelDashboard = new ModelDashboard();
-            modelDashboard = Repository.GetDashBoardData(Session["OFFICE_ID"].ToString());
+            modelDashboard = Repository.GetDashBoardData();
             var jsonData = modelDashboard;
             return Json(jsonData, JsonRequestBehavior.AllowGet);
         }
