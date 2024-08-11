@@ -21,7 +21,7 @@ namespace ComplaintTracker
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Login", action = "AccountLogin", id = UrlParameter.Optional });
+                defaults: new { controller = "Dashboard", action = "Index", id = UrlParameter.Optional });
         }
     }
 }

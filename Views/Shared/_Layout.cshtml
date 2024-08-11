@@ -54,15 +54,15 @@
 
     <div class="wrapper">
         <!--Left Panel-->
-        <nav id="sidebar" class="sidebar">
+        @*<nav id="sidebar" class="sidebar">
             <a class="sidebar-brand" href="~/Dashboard/Index">
                 <svg>
                     <use xlink:href="#ion-ios-pulse-strong"></use>
                 </svg>
                 Complaint Tracker
-            </a>
+            </a>*@
 
-            <div class="sidebar-content">
+            <!--<div class="sidebar-content">
                 <div class="sidebar-user">
                     <img src="~/img/avatars/JDVVNL.jpg" class="img-fluid rounded-circle mb-2" alt="@if (@Session["UserName"] != null){@Session["UserName"]}" />
                     <div class="fw-bold">
@@ -70,9 +70,9 @@
                         {@Session["UserName"]}
                     </div>
                     <small>User</small>
-                </div>
+                </div>-->
                 <!--Left Panel Menu Items-->
-                <ul class="sidebar-nav">
+                <!--<ul class="sidebar-nav">-->
                     @*<li class="sidebar-header">
                         Main
                     </li>*@
@@ -151,9 +151,9 @@
 
 
 
-                </ul>
-            </div>
-        </nav>
+                @*</ul>
+            </div>*@
+        @*</nav>*@
         <div class="main">
             <!--Header Search and Notification Icon-->
             <nav class="navbar navbar-expand navbar-theme">
@@ -301,7 +301,7 @@
                         </div>
                     </div>
                 </li>*@
-                        <li class="nav-item dropdown ms-lg-2">
+                        @*<li class="nav-item dropdown ms-lg-2">
                             <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown" data-bs-toggle="dropdown">
                                 <i class="align-middle fas fa-cog"></i>
                             </a>
@@ -310,7 +310,7 @@
                                 <a class="dropdown-item" href="#" onclick="changepasswordShow(@Session["UserID"])"><i class="align-middle me-1 fas fa-fw fa fa-key"></i> Change Password</a>
                                 <a class="dropdown-item" href="~/Exception/Index"><i class="align-middle me-1 fas fa-fw fa-chart-pie"></i> Exception Log</a>
                                 <a class="dropdown-item" href="~/Settings/Index"><i class="align-middle me-1 fas fa-fw fa-cogs"></i> Settings</a>
-                                <a class="dropdown-item" href="~/Settings/EncoderDecoder"><i class="align-middle me-1 fas fa-fw fa-cogs"></i> Encoder Decoder</a>
+                                <a class="dropdown-item" href="~/Settings/EncoderDecoder"><i class="align-middle me-1 fas fa-fw fa-cogs"></i> Encoder Decoder</a>*@
 
                                 @*@if (Session["LoginType"].ToString() == "Active")
                         {
@@ -320,10 +320,10 @@
                         {
                             <a class="dropdown-item" href="~/Login/Resume"><i class="align-middle me-1 fas fa-fw fa-cogs"></i> Resume</a>
                         }*@
-                                <div class="dropdown-divider"></div>
+                                @*<div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="~/Login/Logout"><i class="align-middle me-1 fas fa-fw fa-arrow-alt-circle-right"></i> Sign out</a>
                             </div>
-                        </li>
+                        </li>*@
                     </ul>
                 </div>
             </nav>

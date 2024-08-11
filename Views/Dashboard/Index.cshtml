@@ -5,10 +5,10 @@
 }
 
 <div class="header">
-    <h1 class="header-title">
+    @*<h1 class="header-title">
         Welcome back,  @if (@Session["User_Name"] != null)
         {@Session["User_Name"]}!
-    </h1>
+    </h1>*@
     @*<p class="header-subtitle">You have 24 new messages and 5 new notifications.</p>*@
 </div>
 
@@ -17,7 +17,7 @@
         <div class="w-100">
             <div class="row">
                 <div class="col-sm-2">
-                    <div class="card">
+                    <div class="card" style="background-color: #eb1060; color: white;">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col mt-0">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="card">
+                    <div class="card" style="background-color: #5038f9; color: white; ">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col mt-0">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="card">
+                    <div class="card" style="background-color: #eda215; color: white;">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col mt-0">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="card">
+                    <div class="card" style="background-color: #159bed; color: white;">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col mt-0">
@@ -109,7 +109,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="card">
+                    <div class="card" style="background-color: #26bb5f; color: white;">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col mt-0">
@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="card">
+                    <div class="card" style="background-color: #2677bb; color: white;">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col mt-0">
@@ -240,12 +240,12 @@
             async: true,
             success: function (result) {
                 //Tiles
-                $('#t1').text(result.TodayComplaints);
-                $('#t2').text(result.TodayPendingComplaints);
-                $('#t3').text(result.PreviousPendingComplaints);
-                $('#t4').text(result.TotalPendingComplaints);
-                $('#t5').text(result.TotalPlannedShutdown);
-                $('#t6').text(result.TodayESDShutdown);
+                $('#t1').text(result.TodayComplaints).css('color', 'white');
+                $('#t2').text(result.TodayPendingComplaints).css('color', 'white');
+                $('#t3').text(result.PreviousPendingComplaints).css('color', 'white');
+                $('#t4').text(result.TotalPendingComplaints).css('color', 'white');
+                $('#t5').text(result.TotalPlannedShutdown).css('color', 'white');
+                $('#t6').text(result.TodayESDShutdown).css('color', 'white');
 
                 //Grid
                 var datatablesButtons = $('#datatables-dashboard-projects').DataTable(
@@ -262,7 +262,7 @@
                         fixedHeader: true,
                         destroy: true,
                         bFilter: false,
-                        pageLength: 8,
+                        pageLength: 15,
                         lengthChange: false,
                         bFilter: false,
                         autoWidth: true
@@ -282,7 +282,7 @@
                         fixedHeader: true,
                         destroy: true,
                         bFilter: false,
-                        pageLength: 8,
+                        pageLength: 15,
                         lengthChange: false,
                         bFilter: false,
                         autoWidth: true
